@@ -1,0 +1,31 @@
+Algoritmo  Ecuacion_de_segundo_grado
+	// calcular ecuacion de segundo grado
+	Escribir 'Segundo ejercicio ¨Ecuación de segundo grado¨';
+	Escribir 'Dada la ecuacion Ax^2+Bx+C = 0 ';
+	// cargar datos
+	Escribir 'Ingrese valor A';
+	Leer a;
+	Escribir 'Ingrese valor B';
+	Leer b;
+	Escribir 'Ingrese valor C';
+	Leer c;
+	// determinar si son reales o imaginarias
+	discriminante <- (b*b)-(4*a*c);
+	Si discriminante<0 Entonces;
+		// si son imaginarias
+		preal <- (-b)/(2*a);
+		pimag <- rc(-discriminante)/(2*a);
+		Escribir 'x1 = ',preal,'+',pimag,'i';
+		Escribir 'x2 = ',preal,'-',pimag,'i';
+	SiNo
+		Si discriminante=0 Entonces // ver si son iguales o distintasx `
+			x <- (-b)/(2*a);
+			Escribir 'x1 = x2 = ',x;
+		SiNo
+			xuno <- ((-b)+rc(discriminante))/(2*a);
+			xdos <- ((-b)-rc(discriminante))/(2*a);
+			Escribir 'x1 = ',xuno;
+			Escribir 'x2 = ',xdos;
+		FinSi
+	FinSi
+FinAlgoritmo
